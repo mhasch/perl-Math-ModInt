@@ -1,0 +1,24 @@
+ANNOUNCE: Math::ModInt 0.005
+
+Math::ModInt version 0.005 should shortly become available from:
+
+    http://search.cpan.org/~mhasch/Math-ModInt-0.005/
+
+Math::ModInt is a Perl class providing modular integer arithmetic
+with overloaded Perl operators.
+
+Version 0.005 is a maintenance update addressing a dependency issue
+(rt #63215) and slightly improving the documentation.
+
+For details, see the Changes file in the distribution.
+
+Note that there is a bug in Math::BigInt version 1.99 (rt #63237)
+Math::ModInt still cannot cope with.  In order to use Math::ModInt,
+a version of Math::BigInt other than 1.99 should be installed.
+
+As usual, bug reports and suggestions are welcome -- please submit
+them through the CPAN RT:
+
+    http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Math-ModInt
+
+-Martin

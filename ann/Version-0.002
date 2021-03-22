@@ -1,0 +1,26 @@
+ANNOUNCE: Math::ModInt 0.002
+
+Math::ModInt version 0.002 should shortly become available from:
+
+    http://search.cpan.org/~mhasch/Math-ModInt-0.002/
+
+Math::ModInt is a Perl class providing modular integer arithmetic
+with overloaded Perl operators.
+
+Version 0.002 is a maintenance update introducing no new features,
+but fixing a couple of bugs (mostly in the test suite).  All changes
+address issues found in response to reports by cpantesters.org.
+Thank you, CPAN testers!
+
+For details, see the Changes file in the distribution.
+
+As usual, bug reports and suggestions are welcome -- please submit
+them through the CPAN RT:
+
+    http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Math-ModInt
+
+-Martin
+-- 
+use Math::ModInt 'mod';
+$a=mod(1,127);print map{$a*=91;$b=0;$b=$a*$b+ord for
+split//,"\cXsfg:LI9WeZWi)/`Hc\cDWrzb(,";chr$b}1..25;

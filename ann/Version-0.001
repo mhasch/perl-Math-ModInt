@@ -1,0 +1,46 @@
+ANNOUNCE: Math::ModInt 0.001 - modular integer arithmetic
+
+Math::ModInt version 0.001 should shortly become available from:
+
+    http://search.cpan.org/~mhasch/Math-ModInt-0.001/
+
+Math::ModInt is a Perl class representing integer residue classes,
+aka elements of quotient rings Z/nZ or "integer numbers modulo some
+integer".  These items can be treated like numbers in many respects,
+and thanks to the "overload" pragma and this module, it is now
+possible to do so in Perl programs, like this:
+
+    use Math::ModInt qw(mod);
+
+    $a = mod(32, 127);            #  32 (mod 127)
+    $b = $a + 321;                #  99 (mod 127)
+    $c = $a**2 - $b/$a;           # 120 (mod 127)
+
+    $m = $c->modulus;             # 127
+    $r = $c->residue;             # 120
+    $s = $c->signed_residue;      #  -7
+    $t = "$a";                    # 'mod(32, 127)'
+
+I wonder why such a module did not exist already, but certainly
+enjoyed the opportunity to do something about it at last.
+
+The package did well in alpha-testing, but may have some rough
+edges or compatibility issues or documentation gaps or be missing
+a useful feature or two.
+
+This first beta release hopefully will get tested on many platforms
+and encourage enough feedback for such issues to get sorted out
+eventually.  It is provided under the same terms as Perl itself,
+without any warranty, but in the genuine hope to be useful.
+
+Please submit your bug reports and suggestions through the CPAN RT:
+
+    http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Math-ModInt
+
+Enjoy,
+
+-Martin
+-- 
+use Math::ModInt 'mod';
+$a=mod(34,127);print map{$a-=7;$b=0;$b=$a*$b+ord for
+split//,"3j)[v\cA\cZ>L5[p9>Srv?y]M?[He";chr$b}1..25;
