@@ -1,0 +1,9 @@
+/blib
+/cover_db
+/pm_to_blib
+/MYMETA.json
+/MYMETA.json.lock
+/MYMETA.yml
+/Makefile
+/Makefile.old
+/Math-ModInt-*
